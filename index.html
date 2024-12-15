@@ -1,245 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoLieBoy Personal Website</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/07e6100214.js" crossorigin="anonymous"></script>
+	<title>Digital Resume of Rolieboy C. Escatron</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/3ef3559250.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="NEMSU.png" type="png">
+	<style>
+		header {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			font-family: 'Arial', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			animation: fadeIn 2s ease-in-out;
+			color: blue;
+			background: linear-gradient(to right, rgb(55, 28, 206), rgb(219, 8, 238));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		@keyframes fadeIn {
+			0% { opacity: 0; transform: translateX(-20px); }
+			100% { opacity: 1; transform: translateX(0); }
+		}
+	</style>
 </head>
-<style>
-    .logo span{
-        color: #ff004f;
-    }
-    .logo .ro {
-        color: aqua;
-    }
-    .logo .lie {
-        color: rgb(250, 11, 238);
-    }
-</style>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h3 class="logo"><span class="ro">Ro</span><span class="lie">Lie</span><span>Boy</span></h3>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Computer Science Student</p>
-                <h1>Hi, I'm <span>Rolieboy C. Escatron</span> <br> From Cantilan, Surigao del sur, <br> Philippines</h1>
+
+<header>
+  <h1>Digital Resume of Rolieboy C. Escatron</h1>
+</header>
+<br><br>
+<section class="resume">
+  <div class="resume_top">
+    <div class="rtop_left">
+      <p class="name">Rolieboy C. Escatron</p>
+      <p class="role">BSCS-4A</p>
+    </div>
+  
+    <div class="rtop_right">
+      
+      <p>bonbonescatron@gmail.com</p>
+      <p>09123456789</p>
+    </div>
+    <div class="r_profile_pic">
+      <img src="rolieboy.jpg" alt="profile_pic" style="border-radius: 50%;">
+    </div>
+  </div>
+  <div class="resume_center">
+    <h2>About ME</h2>
+    <p>I'm Rolieboy Escatron from Purok 2, Magosilom, Cantilan, Surigao del Sur who studied in North Eastern Mindanao State University - Cantilan Campus with the course of Bachelor of Science in Computer Science </p>
+  </div>
+  <div class="resume_bottom">
+    <div class="rbottom_left">
+      <div class="rb_skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <p><i class="fa-solid fa-laptop-code"></i></p>
+            <p>Web Development</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-paint-brush"></i></p>
+            <p>Web Designing</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-film"></i></p>
+            <p>Video Editing</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-volume-up"></i></p>
+            <p>Sound Mixing</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-camera-retro"></i></p>
+            <p>Photoshop Editing</p>
+          </li>
+        </ul>
+      </div>
+      <div class="rb_hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>
+            <p><i class="fa-solid fa-utensils"></i></p>
+            <p>Cooking </p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-seedling"></i></p>
+            <p>Planting</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-book-reader"></i></p>
+            <p>Reading</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-tv"></i></p>
+            <p>Watching Kdrama</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-chess"></i></p>
+            <p>Playing Chess</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="rbottom_right">
+      <div class="r_education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <div class="r_ed_left">
+              <p>2013-2014</p>
             </div>
-        </div>
-    </div>
-
-    <!--    About sa ako ini na -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="image/rol1.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm Rolieboy C. Escatron who still studied at North Eastern Mindanao State University with a
-                        course of Bachelor of science in computer science.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                        </ul>
-                        <ul>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                        </ul>
-                        <ul>
-                            <li><span>I can Love You</span><br>Without Label hahahahhahahah !!!!!!!!!!!!!!!! joke , skwela naai , be hungry to achievements in life!!</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Secret</span><br>because >>>>???????????????</li>
-                        </ul>
-
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Elementary Graduate</span><br>@ Cantilan East Central Elementary School</li>
-                        </ul>
-                        <ul>
-                            <li><span>High School Graduate</span><br>@ Cantilan National High School</li>
-                        </ul>
-                        <ul>
-                            <li><span>College Still Present</span><br>@ North Eastern Mindanao State University</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="r_ed_right">
+              <p>Cantilan East Central Elementary School</p>
+              <p>Year Graduated: 2009-2010</p>
             </div>
-        </div>
-    </div>
-    <!--services-->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae quaerat iste aliquid
-                        deserunt rerum cupiditate eum saepe aut. Ducimus deleniti impedit veritatis minus quibusdam?</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae quaerat iste aliquid
-                        deserunt rerum cupiditate eum saepe aut. Ducimus deleniti impedit veritatis minus quibusdam?</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Ethical</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae quaerat iste aliquid
-                        deserunt rerum cupiditate eum saepe aut. Ducimus deleniti impedit veritatis minus quibusdam?</p>
-                    <a href="">Learn more</a>
-                </div>
+          </li>
+          <li>
+            <div class="r_ed_left">
+              <p>2020-2021</p>
             </div>
-        </div>
-    </div>
-    <!--portfolio-->
-    <div class="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="image/work1.jpg" alt="">
-                    <div class="layer">
-                        <h3>Web Development Coding</h3>
-                        <p>I do this to make a website that best for you! Beautiful than you ! haha
-                        </p>
-                        <a href=""> <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/work2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Database Administrator</h3>
-                        <p>Responsible for maintaining, securing, and operating databases and also ensures that data is
-                            correctly stored and retrieved. Responsible na nga yung tao, marami pa rin di ako gusto
-                            hahahaha
-                        </p>
-                        <a href=""> <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/work3.avif" alt="">
-                    <div class="layer">
-                        <h3>Github</h3>
-                        <p>Responsible for maintaining, securing, and operating databases and also ensures that data is
-                            correctly stored and retrieved. Responsible na nga yung tao, marami pa rin di ako gusto
-                            hahahaha
-                        </p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
+            <div class="r_ed_right">
+              <p>CANTILAN NATIONAL HIGH SCHOOL</p>
+              <p>Year Graduated: 2013-2014</p>
             </div>
-
-        </div>
-        <a href="" class="btn">See more</a>
-    </div>
-    </div>
-
-
-<!--contact-->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>bonbonescatron@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>09309933225</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/rolieboy423/"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                
+          </li>
+          <li>
+            <div class="r_ed_left">
+              <p>2024-2025</p>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <input type="password" name="Password" placeholder="Your Password" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+            <div class="r_ed_right">
+              <p>North Eastern Mindanao State University</p>
+              <p>Still present in 4th year level with the course of Bachelor of Science in Computer Science. </p>
             </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <div class="r_jobs">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <div class="r_ed_right" style="margin-left: 100px; margin-top: 30px;">
+              <p>Contract Web Development Project</p>
+              
+            </div>
+          </li>
+          <li>
+           
+            <div class="r_ed_right" style="margin-left: 100px; margin-top: 10px;">
+              <p>Etc.</p>
+              
+            </div>
+          </li>
+          
+        </ul>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa-solid fa-copyright"></i> @ Rolieboy. Made with <i class="fa-solid fa-heart"></i> Visual Studio Code</p>
-    </div>
-</div>
+  </div>
+</section>
 
-
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1m5DlOcya3WzbFRD7qfmZ0JGMqmeO9yjtxDyzy2oOao7ICNQZV1bjLM09s6ONBiR4/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function() {
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 </body>
-
 </html>
